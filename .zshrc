@@ -1,5 +1,9 @@
 alias j='julia'
 
+# software
+alias v='nvim'
+alias vi='nvim'
+alias vim='nvim'
 
 # zshっぽいやつ
 
