@@ -8,7 +8,7 @@ echo $CURRENT/.gitconfig ~/.gitconfig
 
 # シンボリックリンクの作成
 ln -s $CURRENT/.zshrc ~/.zshrc
-ln -s $CURRENT/.gitconfig ~/.gitconfig
+ln -s $CURRENT/gitconfig ~/.gitconfig
 
 # 確認コマンド
 ls -l ~/.zshrc
