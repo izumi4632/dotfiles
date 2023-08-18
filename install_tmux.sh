@@ -1,29 +1,18 @@
 # 一時ディレクトリを作成
-mkdir -p ~/neovim-installation
-cd ~/neovim-installation
+mkdir -p ~/tmux-installation
+cd ~/tmux-installation
 
-# neovimのソースのダウンロード
-curl -LO https://github.com/neovim/neovim/archive/refs/tags/stable.tar.gz
-tar xzf stable.tar.gz
-
-# ソースのディレクトリに移動
-cd neovim-stable
-
-# 依存解決
-sudo apt install unzip
-
-# makeする
-sudo apt install -y cmake automake libtool libtool-bin
-make CMAKE_BUILD_TYPE=RelWithDebInfo
-sudo make install
+# tmuxのソースのダウンロード
+curl -LO https://github.com/tmux/tmux/releases/download/2.9/tmux-2.9.tar.gz
+yum -y install gcc libevent-devel ncurses-devel
+tar -zxvf tmux-2.9.tar.gz
+cd tmux-2.9
+./configure
+make
+make install
 
 # クリーンアップ
 cd ~
-rm -rf ~/neovim-installation
+rm -rf ~/tmux-installation
 
-echo "Gitのインストールが完了しました。"
-
-# macはズルする
-#######################
-# brew install neovim #
-#######################
+echo "tmuxのインストールが完了しました。"

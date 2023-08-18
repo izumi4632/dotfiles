@@ -21,7 +21,7 @@ sudo make install
 cd ~
 rm -rf ~/neovim-installation
 
-echo "Gitのインストールが完了しました。"
+echo "neovimのインストールが完了しました。"
 
 # macはズルする
 #######################

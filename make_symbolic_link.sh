@@ -9,7 +9,9 @@ echo $CURRENT/.gitconfig ~/.gitconfig
 # シンボリックリンクの作成
 ln -s $CURRENT/.zshrc ~/.zshrc
 ln -s $CURRENT/.gitconfig ~/.gitconfig
+ln -s $CURRENT/.tmux.conf ~/.tmux.conf
 
 # 確認コマンド
 ls -l ~/.zshrc
 ls -l ~/.gitconfig
+ls -l ~/.tmux.conf
