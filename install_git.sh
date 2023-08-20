@@ -13,13 +13,12 @@ tar xzf v2.41.0.tar.gz
 # ソースコードのディレクトリに移動
 cd git-2.41.0
 
-# 何もなかった
-sudo apt install make
-sudo apt-get install autoconf
-sudo apt-get install build-essential
-sudo apt-get install libz-dev
-sudo apt-get install msgfmt
-sudo apt-get install -y gettext
+# 依存ライブラリのインストール zshのエイリアス依存
+agi build-essential
+agi autoconf
+agi libz-dev
+agi msgfmt
+agi gettext
 
 # ソースコードをコンフィギュレーション
 make configure

@@ -13,6 +13,6 @@ make install
 
 # クリーンアップ
 cd ~
-rm -rf ~/tmux-installation
+_ rm -rf ~/tmux-installation
 
 echo "tmuxのインストールが完了しました。"

@@ -9,19 +9,18 @@ tar xzf stable.tar.gz
 # ソースのディレクトリに移動
 cd neovim-stable
 
-# 依存解決
-sudo apt install unzip
+# 依存解決 zshのエイリアス依存
+agi gettext
+agi unzip
 
 # makeする
-sudo apt install -y cmake automake libtool libtool-bin
+agi -y cmake automake libtool libtool-bin
 make CMAKE_BUILD_TYPE=RelWithDebInfo
 sudo make install
 
 # クリーンアップ
 cd ~
-rm -rf ~/neovim-installation
-
-echo "neovimのインストールが完了しました。"
+_ rm -rf ~/neovim-installation
 
 # macはズルする
 #######################
