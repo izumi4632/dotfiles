@@ -7,8 +7,11 @@ echo $CURRENT/.zshrc ~/.zshrc
 echo $CURRENT/.gitconfig ~/.gitconfig
 
 # シンボリックリンクの作成
+unlink ~/.zshrc
 ln -s $CURRENT/.zshrc ~/.zshrc
+unlink ~/.gitconfig
 ln -s $CURRENT/.gitconfig ~/.gitconfig
+unlink ~/.tmux.conf
 ln -s $CURRENT/.tmux.conf ~/.tmux.conf
 
 # 確認コマンド
