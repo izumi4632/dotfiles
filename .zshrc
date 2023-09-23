@@ -26,9 +26,13 @@ alias l='clear && ls'
 alias ll='ls -l'
 alias ls='ls -aGF'
 
+# clear
+alias c='clear'
+
 # 親へのエイリアス
 alias ..2='cd ../..'
 alias ..3='cd ../../..'
+alias ..4='cd ../../../..'
 
 # gitのエイリアス
 alias g='git'
@@ -87,3 +91,6 @@ setopt share_history
 
 # ↓いざなんかあってログとか追うときに混乱しそうなのでコメントアウト
 # setopt hist_ignore_all_dups
+
+# brew
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
